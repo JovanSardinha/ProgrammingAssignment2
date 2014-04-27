@@ -1,12 +1,16 @@
-## Put comments here that give an overall description of what your
-## functions do
+# File Name: cachematrix.R
+# Written By: Jovan Sardinha
+# Created On: April 26, 2014
+# Email: jovan.sardinha@gmail.com
+# Operating System: Windows 7 (32 bit)
 
-## makeCacheMatrix takes a matrix x (assumed to be invertible).
-## This function provides the capability to get the 
-## matrix x previously provided with the get(), set a new 
-## matrix with set(), get the matrix inverse, if it exists,
-## with getInverse() and set a new matrix inverse with 
-## setInverse().
+
+## The function makeCacheMatrix takes a matrix x (assumed to be 
+## invertible).With this function one can get the previously 
+## provided matrix x with the $get(), set a new value of the x
+## matrix with $set(), get the matrix inverse of x, if it exists,
+## with $getInverse() and set a new matrix inverse for x with 
+## $setInverse().
 makeCacheMatrix <- function(x = matrix()) {
      invX <- NULL
      set <- function(y) {
@@ -23,11 +27,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The fucntion cacheSolve calculates the inverse of 
-## the matrix x if a cached inverse of this matrix 
-## does not already exist. This function also assumed 
-## that the matrix x is always invertible (no built-int
-## error handeling for this case).
+## The function cacheSolve calculates the inverse of 
+## the matrix x, if a cached inverse of this matrix 
+## does not already exist. This function also assumes 
+## that the matrix x is always invertible (no special
+## built in error handeling for this).
 cacheSolve <- function(x, ...) {
      invX <- x$getInverse()
      if (!is.null(invX)) {
