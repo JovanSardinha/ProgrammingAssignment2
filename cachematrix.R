@@ -1,8 +1,10 @@
-# File Name: cachematrix.R
+# File Name: run_analysis.R
 # Written By: Jovan Sardinha
 # Created On: April 26, 2014
 # Email: jovan.sardinha@gmail.com
 # Operating System: Windows 7 (32 bit)
+# R Version: R version 3.1.0 (2014-04-10)  
+# Github Repo: https://github.com/JovanSardinha/ProgrammingAssignment2
 
 
 ## The function makeCacheMatrix takes a matrix x (assumed to be 
